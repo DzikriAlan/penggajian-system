@@ -63,9 +63,9 @@ const handleNavScroll = evt => {
             v-html="logo"
           />
 
-          <h1 class="font-weight-medium leading-normal text-xl text-uppercase">
-            Gajian
-          </h1>
+          <h4 class="font-weight-medium leading-normal text-uppercase">
+            Penggajian System
+          </h4>
         </RouterLink>
       </slot>
     </div>

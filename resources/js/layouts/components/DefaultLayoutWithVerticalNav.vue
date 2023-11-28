@@ -1,10 +1,10 @@
 <script setup>
-import { useTheme } from 'vuetify'
+import VerticalNavSectionTitle from '@/@layouts/components/VerticalNavSectionTitle.vue'
 import upgradeBannerDark from '@images/pro/upgrade-banner-dark.png'
 import upgradeBannerLight from '@images/pro/upgrade-banner-light.png'
 import VerticalNavLayout from '@layouts/components/VerticalNavLayout.vue'
 import VerticalNavLink from '@layouts/components/VerticalNavLink.vue'
-import VerticalNavSectionTitle from '@/@layouts/components/VerticalNavSectionTitle.vue'
+import { useTheme } from 'vuetify'
 
 // Components
 import Footer from '@/layouts/components/Footer.vue'
@@ -76,101 +76,196 @@ const upgradeBanner = computed(() => {
           to: '/dashboard',
         }"
       />
+ 
+      <VerticalNavSectionTitle
+        :item="{
+          heading: 'Master',
+        }"
+      />
+
       <VerticalNavLink
         :item="{
-          title: 'Account Settings',
-          icon: 'mdi-account-cog-outline',
-          to: '/account-settings',
+          title: 'Jabatan',
+          icon: 'mdi-card-account-details-star',
+          to: '/jabatan',
+        }"
+      />
+      <VerticalNavLink
+        :item="{
+          title: 'Departemen',
+          icon: 'mdi-domain',
+          to: '/departemen',
+        }"
+      />
+      <VerticalNavLink
+        :item="{
+          title: 'Staff',
+          icon: 'mdi-account-group',
+          to: '/staff',
+        }"
+      />
+
+      <VerticalNavSectionTitle
+        :item="{
+          heading: 'Manajemen SDM',
+        }"
+      />
+
+      <VerticalNavLink
+        :item="{
+          title: 'Jadwal',
+          icon: 'mdi-calendar',
+          to: '/jadwal',
+        }"
+      />
+
+      <VerticalNavLink
+        :item="{
+          title: 'Permohonan Cuti',
+          icon: 'mdi-account-voice',
+          to: '/cuti',
+        }"
+      />
+
+      <VerticalNavLink
+        :item="{
+          title: 'Penggajian',
+          icon: 'mdi-currency-usd',
+          to: '/gaji',
+        }"
+      />
+
+      <VerticalNavLink
+        :item="{
+          title: 'Absensi',
+          icon: 'mdi-fingerprint',
+          to: '/absensi',
+        }"
+      />
+
+      <VerticalNavSectionTitle
+        :item="{
+          heading: 'Manajemen Akun',
+        }"
+      />
+
+      <VerticalNavLink
+        :item="{
+          title: 'Users',
+          icon: 'mdi-account',
+          to: '/users',
+        }"
+      />
+
+      <VerticalNavLink
+        :item="{
+          title: 'Roles',
+          icon: 'mdi-gamepad-circle-up',
+          to: '/roles',
+        }"
+      />
+
+      <VerticalNavLink
+        :item="{
+          title: 'Logout',
+          icon: 'mdi-logout',
+          to: '/logout',
         }"
       />
 
       <!-- 👉 Pages -->
-      <VerticalNavSectionTitle
+      <!--
+        <VerticalNavSectionTitle
         :item="{
-          heading: 'Pages',
+        heading: 'Pages',
         }"
-      />
-      <VerticalNavLink
+        />
+        <VerticalNavLink
         :item="{
-          title: 'Login',
-          icon: 'mdi-login',
-          to: '/login',
+        title: 'Login',
+        icon: 'mdi-login',
+        to: '/login',
         }"
-      />
-      <VerticalNavLink
+        />
+        <VerticalNavLink
         :item="{
-          title: 'Register',
-          icon: 'mdi-account-plus-outline',
-          to: '/register',
+        title: 'Register',
+        icon: 'mdi-account-plus-outline',
+        to: '/register',
         }"
-      />
-      <VerticalNavLink
+        />
+        <VerticalNavLink
         :item="{
-          title: 'Error',
-          icon: 'mdi-information-outline',
-          to: '/no-existence',
+        title: 'Error',
+        icon: 'mdi-information-outline',
+        to: '/no-existence',
         }"
-      />
+        /> 
+      -->
 
       <!-- 👉 User Interface -->
-      <VerticalNavSectionTitle
+      <!--
+        <VerticalNavSectionTitle
         :item="{
-          heading: 'User Interface',
+        heading: 'User Interface',
         }"
-      />
-      <VerticalNavLink
+        />
+        <VerticalNavLink
         :item="{
-          title: 'Typography',
-          icon: 'mdi-alpha-t-box-outline',
-          to: '/typography',
+        title: 'Typography',
+        icon: 'mdi-alpha-t-box-outline',
+        to: '/typography',
         }"
-      />
-      <VerticalNavLink
+        />
+        <VerticalNavLink
         :item="{
-          title: 'Icons',
-          icon: 'mdi-eye-outline',
-          to: '/icons',
+        title: 'Icons',
+        icon: 'mdi-eye-outline',
+        to: '/icons',
         }"
-      />
-      <VerticalNavLink
+        />
+        <VerticalNavLink
         :item="{
-          title: 'Cards',
-          icon: 'mdi-credit-card-outline',
-          to: '/cards',
+        title: 'Cards',
+        icon: 'mdi-credit-card-outline',
+        to: '/cards',
         }"
-      />
-      <VerticalNavLink
+        />
+        <VerticalNavLink
         :item="{
-          title: 'Tables',
-          icon: 'mdi-table',
-          to: '/tables',
+        title: 'Tables',
+        icon: 'mdi-table',
+        to: '/tables',
         }"
-      />
-      <VerticalNavLink
+        />
+        <VerticalNavLink
         :item="{
-          title: 'Form Layouts',
-          icon: 'mdi-form-select',
-          to: '/form-layouts',
+        title: 'Form Layouts',
+        icon: 'mdi-form-select',
+        to: '/form-layouts',
         }"
-      />
+        /> 
+      -->
     </template>
 
     <template #after-vertical-nav-items>
       <!-- 👉 illustration -->
-      <a
+      <!--
+        <a
         href="https://themeselection.com/item/materio-vuetify-laravel-admin-template"
         target="_blank"
         rel="noopener noreferrer"
         style="margin-left: 7px;"
-      >
-        <img
-          :src="upgradeBanner"
-          alt="upgrade-banner"
-          transition="scale-transition"
-          class="upgrade-banner mx-auto"
-          style="max-width: 230px;"
         >
-      </a>
+        <img
+        :src="upgradeBanner"
+        alt="upgrade-banner"
+        transition="scale-transition"
+        class="upgrade-banner mx-auto"
+        style="max-width: 230px;"
+        >
+        </a> 
+      -->
     </template>
 
     <!-- 👉 Pages -->

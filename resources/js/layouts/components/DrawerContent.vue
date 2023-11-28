@@ -26,9 +26,9 @@ const upgradeBanner = computed(() => {
       <div v-html="logo" />
 
       <Transition name="vertical-nav-app-title">
-        <h1 class="font-weight-semibold leading-normal text-xl text-uppercase">
-          Penggajian System 
-        </h1>
+        <h4 class="font-weight-medium leading-normal text-uppercase">
+          Penggajian System
+        </h4>
       </Transition>
     </RouterLink>
   </div>
